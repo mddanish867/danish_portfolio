@@ -26,23 +26,25 @@ interface Post {
   isBookmarked: boolean
 }
 
-interface Comment {
-  id: number
-  postId: number
-  author: string
-  avatar: string
-  content: string
-  timestamp: string
-  likes: number
-  isLiked: boolean
-}
+// interface Comment {
+//   id: number
+//   postId: number
+//   author: string
+//   avatar: string
+//   content: string
+//   timestamp: string
+//   likes: number
+//   isLiked: boolean
+// }
 
 export function CommunitySection() {
   const [activeTab, setActiveTab] = useState<"groups" | "posts" | "qa">("groups")
-  const [showCreateGroup, setShowCreateGroup] = useState(false)
-  const [showCreatePost, setShowCreatePost] = useState(false)
-  const [selectedGroup, setSelectedGroup] = useState<number | null>(null)
   const [searchTerm, setSearchTerm] = useState("")
+
+  // Removed unused state variables:
+  // - showCreateGroup and setShowCreateGroup
+  // - showCreatePost and setShowCreatePost  
+  // - selectedGroup and setSelectedGroup
 
   const [groups, setGroups] = useState<Group[]>([
     {
@@ -131,28 +133,7 @@ export function CommunitySection() {
     },
   ])
 
-  const [comments] = useState<Comment[]>([
-    {
-      id: 1,
-      postId: 1,
-      author: "Dr. Emily Johnson",
-      avatar: "/placeholder.svg?height=32&width=32",
-      content: "This is fascinating! Have you tested this on other transformer variants like BERT or GPT?",
-      timestamp: "1 hour ago",
-      likes: 8,
-      isLiked: false,
-    },
-    {
-      id: 2,
-      postId: 1,
-      author: "James Liu",
-      avatar: "/placeholder.svg?height=32&width=32",
-      content: "Great work! Could you share more details about the specific optimizations you implemented?",
-      timestamp: "30 minutes ago",
-      likes: 5,
-      isLiked: true,
-    },
-  ])
+  // Removed unused comments array since it's not being used anywhere
 
   const toggleGroupJoin = (groupId: number) => {
     setGroups(
@@ -259,7 +240,10 @@ export function CommunitySection() {
             <div className="flex justify-between items-center mb-8">
               <h3 className="text-2xl font-bold text-white">Research Groups</h3>
               <button
-                onClick={() => setShowCreateGroup(true)}
+                onClick={() => {
+                  // Placeholder for create group functionality
+                  console.log("Create group clicked");
+                }}
                 className="flex items-center gap-2 bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-3 rounded-xl font-medium transition-all duration-300 hover:scale-105"
               >
                 <Plus className="w-4 h-4" />
@@ -326,7 +310,10 @@ export function CommunitySection() {
             <div className="flex justify-between items-center mb-8">
               <h3 className="text-2xl font-bold text-white">Community Posts</h3>
               <button
-                onClick={() => setShowCreatePost(true)}
+                onClick={() => {
+                  // Placeholder for create post functionality
+                  console.log("Create post clicked");
+                }}
                 className="flex items-center gap-2 bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-3 rounded-xl font-medium transition-all duration-300 hover:scale-105"
               >
                 <Plus className="w-4 h-4" />
