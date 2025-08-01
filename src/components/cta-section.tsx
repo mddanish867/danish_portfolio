@@ -6,11 +6,7 @@ export function CTASection() {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden ">
-      {/* Animated Background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-black via-indigo-950 to-purple-950">
-        <div className="absolute inset-0 bg-[url('/placeholder.svg?height=1080&width=1920')] opacity-10 bg-cover bg-center"></div>
-        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/40"></div>
-      </div>
+     
 
       {/* Floating Particles */}
       <div className="absolute inset-0">

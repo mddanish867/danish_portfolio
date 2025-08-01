@@ -27,7 +27,7 @@ export function ContactSection() {
   }
 
   return (
-    <section className="bg-gray-900 py-20">
+    <section className="bg-gradient-to-br from-black via-gray-900 to-indigo-950 py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Let's Work Together</h2>

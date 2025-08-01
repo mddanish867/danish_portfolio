@@ -96,7 +96,7 @@ export function BlogSection() {
   }
 
   return (
-    <section className="bg-gray-900 py-20">
+    <section className="bg-gradient-to-br from-gray-900 via-black to-indigo-950 py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-white">Data Science Blogs</h2>

@@ -21,10 +21,13 @@ export function AboutSection() {
   ]
 
   return (
-    <section className="bg-gray-900 py-20">
+    <section className="bg-gradient-to-br from-black via-gray-900 to-indigo-950  mt-10">      
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          
           <div>
+            
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">About Me</h2>
             <p className="text-indigo-200 text-lg mb-6">
               I'm a passionate Data Scientist with 5+ years of experience in machine learning, artificial intelligence,

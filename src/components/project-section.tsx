@@ -192,10 +192,9 @@ export function ProjectsSection() {
 
   if (loading) {
     return (
-      <section className="bg-gradient-to-br from-black via-indigo-950 to-purple-950 py-20 relative overflow-hidden">
+      <section className="bg-gradient-to-br from-black via-indigo-950 to-purple-950  relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <div className="w-16 h-16 bg-gradient-to-r from-indigo-500 to-purple-600 rounded-2xl mx-auto mb-6 animate-pulse"></div>
             <div className="h-8 bg-gray-700 rounded-lg w-64 mx-auto mb-4 animate-pulse"></div>
             <div className="h-4 bg-gray-700 rounded w-96 mx-auto animate-pulse"></div>
           </div>
@@ -223,15 +222,8 @@ export function ProjectsSection() {
   }
 
   return (
-    <section className="bg-gradient-to-br from-black via-indigo-950 to-purple-950 py-20 relative overflow-hidden">
-      {/* Animated Background Elements */}
-      <div className="absolute inset-0">
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-indigo-500/10 rounded-full blur-3xl animate-pulse"></div>
-        <div
-          className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl animate-pulse"
-          style={{ animationDelay: "2s" }}
-        ></div>
-      </div>
+    <section className="bg-gradient-to-br from-gray-900 via-black to-indigo-950 py-20 relative overflow-hidden">
+     
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16 animate-fadeInUp">
